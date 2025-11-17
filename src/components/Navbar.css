@@ -1,0 +1,133 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Left Section (Logo + Brand) ===== */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.brand {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ===== Right Section (Links) ===== */
+.nav-right {
+  display: flex;
+  gap: 25px;
+  transition: all 0.5s ease;
+}
+
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+.nav-right a:hover {
+  color: #d1e8ff;
+}
+
+/* ===== Hamburger Icon ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburger span {
+  background: #fff;
+  height: 3px;
+  width: 26px;
+  margin: 4px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+  .nav-right {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    background: linear-gradient(180deg, #0052d4, #4364f7, #6fb1fc);
+    height: calc(100vh - 70px);
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nav-right.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hamburger Animation */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+}

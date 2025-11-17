@@ -1,0 +1,226 @@
+.tutor-container {
+  background: linear-gradient(180deg, #f4f8ff, #e8f0ff);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+.header {
+  text-align: center;
+  padding: 70px 30px 20px;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #004aad;
+  font-weight: 600;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 60px;
+  gap: 30px;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004aad;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.step {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 180px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background: #f0f7ff;
+}
+
+.step .icon {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  font-size: 1.8rem;
+  color: #004aad;
+}
+
+/* Illustration */
+.illustration-container img {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.note strong {
+  color: #004aad;
+}
+
+/* Right Section - Form */
+.form-section {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  font-size: 1.5rem;
+  color: #004aad;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.free-badge {
+  background: #ff3b3b;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-right: 5px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f7f9fc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input,
+select {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+}
+
+.submit-btn {
+  background: #004aad;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #003bb3;
+}
+
+/* Footer Notes */
+.terms,
+.login-text {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.terms a,
+.login-text a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #004aad;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 240px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  color: #004aad;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .form-section {
+    width: 90%;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .arrow {
+    display: none;
+  }
+}

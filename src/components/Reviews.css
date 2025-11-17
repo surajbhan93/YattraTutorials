@@ -1,0 +1,82 @@
+.reviews-section {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #f7f9fc, #e6eeff);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 50px;
+}
+
+.reviews-gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Review images styling */
+.review-img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  border: 3px solid #fff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.review-img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlapping effect */
+.img1 { transform: rotate(-5deg) translateY(10px); z-index: 3; }
+.img2 { transform: rotate(3deg) translateY(-10px); z-index: 2; }
+.img3 { transform: rotate(-2deg); z-index: 4; }
+.img4 { transform: rotate(4deg) translateY(20px); z-index: 1; }
+.img5 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img6 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img7 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img8 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img9 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img10 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img11 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img12 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+.img13 { transform: rotate(-3deg) translateY(-15px); z-index: 5; }
+
+/* Floating animation for subtle motion */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.review-img {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .review-img {
+    width: 600px;
+    height: 160px;
+  }
+
+  .reviews-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-gallery {
+    gap: 15px;
+  }
+}
