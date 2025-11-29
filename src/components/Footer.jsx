@@ -28,7 +28,7 @@ const Footer = () => {
           <h4>Contact Info</h4>
           <p>📍 201, Chaukhandi, Kydganj, Prayagraj, Uttar Pradesh, 211003</p>
           <p>📞 +91 9335125003 | 9198639707</p>
-          <p>🌐WWW.jptutorial.in</p>
+          <p>🌐WWW.jptutorials.in</p>
           <p>📍jpsingh1806@gmail.com</p>
 
           <div className="social-icons">
