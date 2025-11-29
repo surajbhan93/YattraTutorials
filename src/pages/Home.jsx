@@ -16,7 +16,7 @@ const Home = () => {
       text: (
         <>
           Get top-quality home tuition for all classes —{" "}
-          <b>ICSE, ISC, CBSE, UP Board, IIT, PMT</b> &{" "}
+          <b>ICSE, ISC, CBSE, UP Board, IIT, NEET</b> &{" "}
           <b>Computer Courses</b> like{" "}
           <span className="highlight-courses">Java, BlueJ, C++, Python</span>{" "}
           and more. Learn with expert teachers at your doorstep.

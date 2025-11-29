@@ -65,7 +65,7 @@ const About = () => {
             flexible, and results-driven — because every child deserves the best
             learning experience.
           </p>
-          <p><strong>JP Tutorial</strong> established in the year <strong><i>2002</i></strong> and since then has been providing students with teachers who are professional in their subjects.our students from different <b> ICSE ISC CBSE </b> schools. These students have done very well in their life and many of our students are in medical professional , and other fields, JP sir is a very good person coperative person for students as well as for teachers . <strong>Join our tutorial for the best teachers provided by JP sir</strong></p>
+          <p><strong>JP Tutorial</strong> established in the year <strong><i>2002</i></strong> and since then has been providing students with teachers who are professional in their subjects.our students from different <b> ICSE ISC CBSE Boards, </b> schools and Colleges.. These students have done very well in their life and many of our students are in medical professional , and other fields, JP sir is a very good person coperative person for students as well as for teachers . <strong>Join our tutorial for the best teachers provided by JP sir</strong></p>
         </div>
       </section>
 
