@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Reviews from "../components/Reviews";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import img1 from "../assets/images/hero11.jpg";
+import img1 from "../assets/images/home.png";
 import img2 from "../assets/images/hero2.jpg";
 import img3 from "../assets/images/hero3.jpg";
 import img4 from "../assets/images/hero4.jpg";

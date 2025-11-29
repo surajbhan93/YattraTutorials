@@ -51,7 +51,7 @@ const StatsAndServices = () => {
         <div className="hero-text">
           <h1>Trusted Tuition & Home Tutors</h1>
           <p>
-            Expert tutors, proven results — we’ve served <strong>150,000+</strong> students in the last <strong>21 years</strong>.
+            Expert tutors, proven results — we’ve served <strong>12,000+</strong> students in the last <strong>23 years</strong>.
             Connect with certified home tutors or join online classes today.
           </p>
           <div className="hero-ctas">
@@ -65,8 +65,8 @@ const StatsAndServices = () => {
       {/* STATS */}
       <div className="stats-wrap">
         <Stat label="Expert Tutors" end={3000} suffix="+" />
-        <Stat label="Years of Trust" end={21} suffix=" yrs" />
-        <Stat label="Students Served" end={150000} suffix="+" />
+        <Stat label="Years of Trust" end={23} suffix=" yrs" />
+        <Stat label="Students Served" end={12000} suffix="+" />
       </div>
 
       {/* SERVICES */}

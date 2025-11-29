@@ -4,7 +4,7 @@ import review1 from "../assets/reviews/review1.png";
 import review2 from "../assets/reviews/review2.png";
 import review3 from "../assets/reviews/review3.png";
 import review4 from "../assets/reviews/review4.png";
-import review5 from "../assets/reviews/review5.png";
+// import review5 from "../assets/reviews/review5.png";
 import review from "../assets/reviews/review.png";
 import review6 from "../assets/reviews/review6.png";
 import review7 from "../assets/reviews/review7.png";
@@ -33,7 +33,7 @@ const Reviews = () => {
         <img src={review2} alt="Review 2" className="review-img img2" />
         <img src={review3} alt="Review 3" className="review-img img3" />
         <img src={review4} alt="Review 4" className="review-img img4" />
-        <img src={review5} alt="Review 5" className="review-img img5" />
+        {/* <img src={review5} alt="Review 5" className="review-img img5" /> */}
          <img src={review} alt="Review 5" className="review-img img" />
           <img src={review6} alt="Review 5" className="review-img img6" />
            <img src={review7} alt="Review 5" className="review-img img7" />

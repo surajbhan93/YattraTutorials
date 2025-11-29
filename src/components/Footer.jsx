@@ -9,10 +9,7 @@ const Footer = () => {
         {/* Left section */}
         <div className="footer-about">
           <h3>JP Tutorial</h3>
-          <p>
-            Empowering students through quality education and mentorship.  
-            Join us to achieve excellence in your academic and professional journey.
-          </p>
+          <p><strong>JP Tutorial</strong> established in the year <strong><i>2002</i></strong> and since then has been providing students with teachers who are professional in their subjects.our students from different <b> ICSE ISC CBSE </b> schools. These students have done very well in their life and many of our students are in medical professional , and other fields, JP sir is a very good person coperative person for students as well as for teachers . <strong>Join our tutorial for the best teachers provided by JP sir</strong></p>
         </div>
 
         {/* Middle section */}
@@ -31,7 +28,7 @@ const Footer = () => {
           <h4>Contact Info</h4>
           <p>📍 201, Chaukhandi, Kydganj, Prayagraj, Uttar Pradesh, 211003</p>
           <p>📞 +91 9335125003</p>
-          <p>✉️ info@jptutorial.com</p>
+          <p>✉️ info@jptutorial.in</p>
 
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -43,7 +40,7 @@ const Footer = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <FaLinkedinIn />
             </a>
-            <a href="mailto:info@jptutorial.com">
+            <a href="mailto:info@jptutorial.in">
               <FaEnvelope />
             </a>
           </div>
@@ -51,7 +48,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} JP Tutorial | All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} JP Tutorial | Established 2002 |  All Rights Reserved.</p>
       </div>
     </footer>
   );
