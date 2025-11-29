@@ -31,7 +31,7 @@ const Home = () => {
           Every student is unique — that’s why we provide{" "}
           <b>individual attention</b> to help you master each subject
           confidently. Guaranteed support for the whole session, with{" "}
-          <b>3 days of free trial classes</b>. Tuition fees are charged
+          <b>2 days of free trial classes</b>. Tuition fees are charged
           according to the class level.
         </>
       ),
