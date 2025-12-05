@@ -1,176 +1,264 @@
-/* Page */
+/* --------------------------------------------------
+ 🔥 GOOGLE FONT
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --------------------------------------------------
+ MAIN PAGE
+-------------------------------------------------- */
 .stats-page {
   font-family: "Poppins", sans-serif;
-  background: #f7fbff;
-  padding-bottom: 50px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding-bottom: 80px;
+  
 }
 
-/* HERO SECTION — IMAGE LEFT | TEXT RIGHT */
-.stats-hero {
+/* --------------------------------------------------
+ HERO SECTION
+-------------------------------------------------- */
+.stats-page .stats-hero {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: space-between; */
+  padding: 80px 8%;
   gap: 40px;
-  padding: 60px 8%;
-  max-width: 1300px;
-  margin: auto;
+  justify-content: center;  /* Horizontal center */
+  align-items: center;      /* Vertical center */
+  flex-wrap: wrap;
 }
 
-/* Left Image */
-.hero-img {
-  flex: 1;
+.stats-page .hero-img img {
+  width: 180vh;
+  max-width: 100%;
+  border-radius: 24px;
+  filter: brightness(75%);
+  /* box-shadow: 0 30px 70px rgba(0,0,0,0.5); */
+  transition: 0.4s ease;
   display: flex;
-  justify-content: center;
-}
-.hero-img img {
-  width: 900px;
-  /* max-width:100%; */
-  border-radius: 14px;
-  object-fit: cover;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+  justify-content: center;  /* Horizontal center */
+  align-items: center;      /* Vertical center */
+  height: 60vh; 
+  /* padding-left: 50vh; */
+
 }
 
-/* Right Text */
-.hero-text {
-  flex: 1;
+
+.stats-page .hero-img img:hover {
+  filter: brightness(100%);
+  transform: scale(1.03);
 }
-.hero-text h1 {
-  font-size: 2.4rem;
-  color: #032a50;
-  margin-bottom: 14px;
+
+.stats-page .hero-text {
+  max-width: 600px;
 }
-.hero-text p {
-  color: #425b70;
-  line-height: 1.6;
+
+.stats-page .hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #010202, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 }
-.hero-ctas .btn {
-  margin-right: 10px;
+
+.stats-page .hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: linear-gradient(90deg, #010202, #fc00ff);;
+  margin-bottom: 30px;
 }
 
-/* Buttons */
-.btn {
-  padding: 12px 20px;
-  border-radius: 10px;
-  border: none;
+/* --------------------------------------------------
+ BUTTONS
+-------------------------------------------------- */
+.stats-page .btn {
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: 600;
-  transition: 0.2s ease;
-}
-.btn.primary {
-  background: #0051d4;
-  color: #fff;
-}
-.btn.primary:hover {
-  transform: translateY(-3px);
-}
-.btn.outline {
-  border: 2px solid #0051d4;
-  background: transparent;
-  color: #0051d4;
-}
-.btn.outline:hover {
-  transform: translateY(-3px);
+  border: none;
+  margin-right: 12px;
+  transition: 0.3s ease;
 }
 
-/* STATS */
-.stats-wrap {
+.stats-page .btn.primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.stats-page .btn.outline {
+  background: transparent;
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.stats-page .btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* --------------------------------------------------
+ STATS
+-------------------------------------------------- */
+.stats-page .stats-wrap {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  padding: 20px 8%;
+  gap: 30px;
+  margin-top: -20px;
+  padding: 40px 8%;
+  flex-wrap: wrap;
 }
-.stat {
-  background: #e77474;
-  padding: 20px 26px;
-  border-radius: 12px;
+
+.stats-page .stat {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  padding: 25px 40px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(6,34,85,0.06);
+  min-width: 220px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
 }
-.stat-number {
-  font-size: 1.7rem;
+
+.stats-page .stat:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.stats-page .stat-number {
+  font-size: 2.4rem;
   font-weight: 700;
 }
-.stat-label {
-  font-size: 0.95rem;
-  color: #4c6b83;
+
+.stats-page .stat-label {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  opacity: 0.85;
 }
 
-/* SERVICES */
-.services-section {
-  padding: 40px 8%;
-  max-width: 1600px;
+/* --------------------------------------------------
+ POPULAR COURSES
+-------------------------------------------------- */
+.stats-page .services-section {
+  padding: 80px 8%;
+}
+
+.stats-page .services-section h2 {
+  text-align: center;
+  font-size: 2.7rem;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+.stats-page .subtitle {
+  text-align: center;
+  max-width: 680px;
   margin: auto;
-  background-color: #7394b0;
-}
-.services-section h2 {
-  font-size: 1.9rem;
-  margin-bottom: 4px;
-  color: #022a54;
-}
-.subtitle {
-  color: #567089;
-  margin-bottom: 20px;
-}
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
-}
-.service-card {
-  background: #bc7474;
-  padding: 14px;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(6,34,85,0.05);
-}
-.service-card img {
-  width: 100%;
-  height: 160px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-.service-card h3 {
-  margin: 12px 0 4px;
-}
-.service-card p {
-  color: #4c647a;
+  color: #cfdfff;
+  margin-bottom: 50px;
 }
 
-/* CTA BANNER */
-.cta-banner {
-  background: #8bb8f2;
-  padding: 30px 30px;
-  margin: 40px 8% 0s;
-  border-radius: 12px;
+.stats-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.stats-page .service-card {
+  background: linear-gradient(145deg, #141e30, #243b55);
+  border-radius: 22px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-page .service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: 0.6s ease;
+}
+
+.stats-page .service-card:hover::before {
+  opacity: 1;
+}
+
+.stats-page .service-card:hover {
+  transform: translateY(-12px) scale(1.03);
+}
+
+.stats-page .service-card h3 {
+  font-size: 1.25rem;
+  color: #4facfe;
+  margin-bottom: 10px;
+}
+
+.stats-page .service-card ul {
+  color: #cfeaff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  list-style: none;
+  padding: 0;
+}
+
+/* --------------------------------------------------
+ CTA BANNER
+-------------------------------------------------- */
+.stats-page .cta-banner {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  margin: 80px 8% 0;
+  padding: 45px;
+  border-radius: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.cta-banner button {
-  margin-left: 10px;
+  box-shadow: 0 40px 70px rgba(0,0,0,0.4);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* RESPONSIVE */
+.stats-page .cta-banner h3 {
+  font-size: 2rem;
+}
+
+.stats-page .cta-banner p {
+  max-width: 500px;
+  opacity: 0.95;
+}
+
+/* --------------------------------------------------
+ RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 1100px) {
+  .stats-page .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
-  .stats-hero {
+  .stats-page .stats-hero {
     flex-direction: column;
     text-align: center;
   }
-  .hero-img img {
-    max-width: 460px;
+
+  .stats-page .hero-img img {
+    width: 90%;
+  }
+
+  .stats-page .cta-banner {
+    text-align: center;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 600px) {
-  .services-grid {
+  .stats-page .services-grid {
     grid-template-columns: 1fr;
-    
-  }
-  .cta-banner {
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
-    
-    
   }
 }

@@ -1,147 +1,144 @@
-.contact {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
+/* Font & Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Wrapper */
+.contact {
+  background: linear-gradient(135deg, #f4f9ff, #dbeafe);
+  padding: 50px 20px;
+}
+
 .contact-wrapper {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
   justify-content: center;
 }
 
 /* Left - Form */
 .contact-form {
-  flex: 1 1 400px;
-  background: rgba(255,255,255,0.1);
-  padding: 30px 25px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  backdrop-filter: blur(5px);
+  flex: 1;
+  min-width: 350px;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
 .contact-form h2 {
-  margin-bottom: 10px;
-  color: #fff;
   font-size: 2rem;
+  color: #0f4c81;
+  margin-bottom: 10px;
 }
 
 .contact-form p {
-  margin-bottom: 20px;
-  color: #f0f0f0;
+  color: #555;
+  margin-bottom: 25px;
 }
 
-/* Input group */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
 .input-group {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.input-group:focus-within {
+  border-color: #0f4c81;
+  box-shadow: 0 0 8px rgba(15,76,129,0.2);
 }
 
 .input-group .icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  color: #555;
+  margin-right: 10px;
+  color: #0f4c81;
+  font-size: 18px;
 }
 
 .input-group input,
 .input-group select,
 .input-group textarea {
-  width: 100%;
-  padding: 12px 12px 12px 40px;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
   outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
 }
 
-/* Select styling */
-.input-group select {
-  appearance: none;
-  background-color: #fff;
-  color: #333;
-}
-
-/* Button */
-.contact-form button {
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+button {
+  background: linear-gradient(135deg, #0f4c81, #3a7bd5);
   color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-
-.contact-form button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255,65,108,0.4);
-}
-
-/* Success message */
-.success-msg {
-  color: #00ff99;
   font-weight: bold;
-  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(15,76,129,0.3);
+}
+
+.success-msg {
+  margin-top: 15px;
+  color: #0f4c81;
+  font-weight: 500;
+  background: #e0f0ff;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /* Right - Info */
 .contact-info {
-  flex: 1 1 300px;
-  background: rgba(255,255,255,0.1);
-  padding: 25px 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  backdrop-filter: blur(5px);
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
 .contact-info h3 {
+  color: #0f4c81;
   margin-bottom: 15px;
-  color: #ffdd59;
 }
 
-.contact-info hr {
-  margin: 15px 0;
-  border: 0.5px solid rgba(255,255,255,0.3);
+.info-box {
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  color: #555;
+  margin-bottom: 5px;
 }
 
 /* Map */
 .contact-map {
   margin-top: 40px;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
-/* ===== Responsive ===== */
-@media screen and (max-width: 768px) {
+/* Responsive */
+@media (max-width: 900px) {
   .contact-wrapper {
     flex-direction: column;
-    gap: 20px;
-  }
-  .contact-form h2 {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .contact-form h2 {
-    font-size: 1.5rem;
-  }
-  .contact-form p, .contact-info p {
-    font-size: 0.9rem;
-  }
-  .input-group input, .input-group select, .input-group textarea {
-    font-size: 0.9rem;
-    padding: 10px 10px 10px 35px;
-  }
-  .contact-form button {
-    font-size: 0.95rem;
-    padding: 10px;
   }
 }

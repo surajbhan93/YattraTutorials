@@ -1,176 +1,96 @@
-import React, { useState } from "react";
+import React from "react";
 import "./StudentReg.css";
-import {
-  FaUser,
-  FaPhone,
-  FaEnvelope,
-  FaBook,
-  FaListUl,
-  FaChalkboardTeacher,
-  FaSmile,
-} from "react-icons/fa";
 import Illu from "../assets/images/Illu.png";
+import Illu2 from "../assets/images/h3.jpg";
 
 const StudentReg = () => {
-  const [form, setForm] = useState({
-    role: "Student/Parent",
-    name: "",
-    phone: "",
-    email: "",
-    course: "",
-    subject: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Demo class request submitted successfully!");
-  };
-
   return (
-    <div className="tutor-container">
-      {/* Header */}
-      <div className="header">
-        <h2>We Help Students and Tutors Find Each Other</h2>
+    <div className="student-wrapper">
+      {/* Hero Section */}
+      <div className="student-hero">
+        <h1>Welcome to <span>Yattra Tutorials</span></h1>
+        <p>Connecting Students with the Best Tutors for Home Tuition & Online Classes</p>
       </div>
 
       {/* Main Section */}
-      <div className="main-content">
+      <div className="student-main">
         {/* Left Section */}
-        <div className="left-section">
-          <h1 className="site-title">TutorEdge</h1>
-          <h3 className="tagline">Learn & Achieve!!</h3>
-
-          {/* Steps Section */}
-          <div className="steps">
-            <div className="step">
-              <FaListUl className="icon" />
-              <h4>
-                Tell us your <span>NEEDS</span>
-              </h4>
+        <div className="student-left">
+          <h2>Why Choose Yattra Tutorials?</h2>
+          <div className="feature-cards">
+            <div className="feature-card">
+              <h3>📘 School Subjects</h3>
+              <p>ICSE, CBSE & State Boards – Classes 1 to 12</p>
             </div>
-            <div className="arrow">➡️</div>
-            <div className="step">
-              <FaChalkboardTeacher className="icon" />
-              <h4>
-                Get a Free <span>DEMO</span>
-              </h4>
+            <div className="feature-card">
+              <h3>🎯 Competitive Exams</h3>
+              <p>IIT-JEE, NEET, Foundation Courses</p>
             </div>
-            <div className="arrow">➡️</div>
-            <div className="step">
-              <FaSmile className="icon" />
-              <h4>
-                Confirm if you <span>LIKE</span>
-              </h4>
+            <div className="feature-card">
+              <h3>💻 Computer Courses</h3>
+              <p>Java, Python, C++, Web Development & More</p>
+            </div>
+            <div className="feature-card">
+              <h3>🏠 Home & Online Tuition</h3>
+              <p>Learn from comfort of your home or online interactive sessions</p>
             </div>
           </div>
 
-          {/* Illustration */}
-          <div className="illustration-container">
-            <img src={Illu} alt="Tutor helping student" />
+          <div className="description-box">
+            <p>
+              Yattra Tutorials is a trusted platform connecting students and parents 
+              with <strong>experienced, verified tutors</strong> across various subjects 
+              and competitive exams. Whether you want to improve your grades or get 
+              expert coaching, we have the right tutor for you!
+            </p>
+            <p>
+              Our tutors are selected based on expertise, experience, and passion 
+              for teaching. We make learning simple, fun, and effective.
+            </p>
           </div>
 
-          {/* Tagline */}
-          <p className="note">
-            Home Tuition is the #1 secret of{" "}
-            <strong>ACADEMIC EXCELLENCE</strong>
-          </p>
+          <a
+            href="https://tally.so/r/2EXXLp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="apply-btn"
+          >
+            🚀 Apply Now
+          </a>
         </div>
 
-        {/* Right Section - Form */}
-        <div className="form-section">
-          <div className="form-header">
-            <span className="free-badge">FREE</span> Registration
+        {/* Right Section */}
+        <div className="student-right">
+          <img src={Illu} alt="Student illustration" className="illu-img" />
+          <img src={Illu2} alt="Learning Illustration" className="illu-img-2" />
+        </div>
+      </div>
+
+      {/* How It Works Section */}
+      <div className="how-it-works">
+        <h2>How It Works?</h2>
+        <div className="steps">
+          <div className="step">
+            <div className="step-icon">1️⃣</div>
+            <p>Tell us your <strong>Learning Needs</strong></p>
           </div>
-          <form onSubmit={handleSubmit} className="tutor-form">
-            <label>I am a</label>
-            <select name="role" value={form.role} onChange={handleChange}>
-              <option>Student/Parent</option>
-              <option>Tutor</option>
-            </select>
-
-            <div className="input-group">
-              <FaUser />
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={form.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className="input-group">
-              <FaPhone />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Mobile Number"
-                value={form.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className="input-group">
-              <FaEnvelope />
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Email"
-                value={form.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className="input-group">
-              <FaBook />
-              <input
-                type="text"
-                name="course"
-                placeholder="Course you need help with"
-                value={form.course}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="input-group">
-              <FaBook />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject you need help with"
-                value={form.subject}
-                onChange={handleChange}
-              />
-            </div>
-
-            <button type="submit" className="submit-btn">
-              GET FREE DEMO CLASS
-            </button>
-
-            <p className="terms">
-              By signing up you agree to our{" "}
-              <a href="#">Terms and Conditions</a>
-            </p>
-            <p className="login-text">
-              Already a member? <a href="#">Login</a>
-            </p>
-          </form>
+          <div className="step">
+            <div className="step-icon">2️⃣</div>
+            <p>Get a Free <strong>Demo Session</strong></p>
+          </div>
+          <div className="step">
+            <div className="step-icon">3️⃣</div>
+            <p>Choose and Start <strong>Learning</strong></p>
+          </div>
         </div>
       </div>
 
       {/* Testimonials Section */}
-      <div className="testimonials">
+      <div className="student-testimonials">
         <h2>What Our Students Say</h2>
         <div className="testimonial-cards">
           <div className="card">
-            <p>"My marks improved a lot after joining TutorEdge!"</p>
+            <p>"My marks improved a lot after joining Yattra Tutorials!"</p>
             <h4>- Priya, Class 8</h4>
           </div>
           <div className="card">
@@ -189,7 +109,24 @@ const StudentReg = () => {
             <p>"Best tutoring service for all subjects!"</p>
             <h4>- Sneha, Class 6</h4>
           </div>
+          <div className="card">
+            <p>"Highly recommend for IIT & NEET preparation."</p>
+            <h4>- Rohit, Class 12</h4>
+          </div>
         </div>
+      </div>
+
+      {/* Footer CTA */}
+      <div className="cta-footer">
+        <h2>Ready to Start Learning?</h2>
+        <a
+          href="https://tally.so/r/2EXXLp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="apply-btn"
+        >
+          🚀 Apply Now
+        </a>
       </div>
     </div>
   );

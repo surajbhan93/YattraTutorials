@@ -9,7 +9,7 @@ const Contact = () => {
     e.preventDefault();
     setSubmitted(true);
     e.target.reset();
-    setTimeout(() => setSubmitted(false), 3000);
+    setTimeout(() => setSubmitted(false), 4000);
   };
 
   return (
@@ -18,7 +18,7 @@ const Contact = () => {
         {/* Left - Form */}
         <div className="contact-form">
           <h2>Contact Us</h2>
-          <p>We’d love to hear from you! Fill out the form below.</p>
+          <p>We’d love to hear from you! Fill out the form below or contact us directly via <strong>Mobile Number</strong> or <strong>Email</strong>.</p>
           <form onSubmit={handleSubmit}>
             <div className="input-group">
               <FaUser className="icon" />
@@ -48,7 +48,8 @@ const Contact = () => {
           </form>
           {submitted && (
             <p className="success-msg">
-              Your message has been sent successfully! ✅
+              Your message has been sent successfully! ✅ <br />
+              We will contact you soon via <strong>Mobile Number</strong> or <strong>Email</strong>.
             </p>
           )}
         </div>
@@ -56,18 +57,22 @@ const Contact = () => {
         {/* Right - Info */}
         <div className="contact-info">
           <h3>Reach Us</h3>
-          <p><strong>Prayagraj Office / Head Office:</strong></p>
-          <p>201, Chaukhandi, Kydganj, Prayagraj, Uttar Pradesh, India</p>
-          <p><strong>Pin Code:</strong> 211003</p>
-          <hr />
-          <p><strong> <b>Director:</b></strong> Mr. J.P. Singh</p>
-          <p><strong>Email:</strong> jpsingh1806@gmail.com</p>
-          <p><strong>Mobile:</strong> +91 9335125003</p>
-          <hr />
-          <p><strong><b>HR Manager:</b></strong> Ms. kanika Singh</p>
-          <p>B.COM, MBA(HR & Finance)</p>
-          <p><strong>Email:</strong> hr@jptutorial.com</p>
-          <p><strong>Mobile:</strong> +91 9307814133</p>
+          <div className="info-box">
+            <p><strong>Office / Head Office:</strong></p>
+            <p>201, Chaukhandi, Kydganj, Prayagraj, Uttar Pradesh, India</p>
+            <p><strong>Pin Code:</strong> 211003</p>
+          </div>
+          <div className="info-box">
+            <p><strong>Director:</strong> Mr. J.P. Singh</p>
+            <p><strong>Email:</strong> jpsingh1806@gmail.com</p>
+            <p><strong>Mobile:</strong> +91 9335125003</p>
+          </div>
+          <div className="info-box">
+            <p><strong>HR Manager:</strong> Ms. Kanika Singh</p>
+            <p>B.COM, MBA(HR & Finance)</p>
+            <p><strong>Email:</strong> hr@jptutorial.com</p>
+            <p><strong>Mobile:</strong> +91 9307814133</p>
+          </div>
         </div>
       </div>
 

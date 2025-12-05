@@ -1,80 +1,106 @@
 import React from "react";
 import {
   FaChalkboardTeacher,
-  FaFileAlt,
-  FaHandsHelping,
+  FaLaptop,
+  FaBook,
   FaUsers,
-  FaRupeeSign,
+  FaUserCheck,
 } from "react-icons/fa";
 import "./Features.css";
 
-// Decorative images (put your images in src/assets/features/)
-import decoLeft from "../assets/images/deco-left.jpg";
-import decoRight from "../assets/images/deco-right.jpg";
+const topFeatures = [
+  {
+    icon: <FaUserCheck />,
+    title: "BEST TUTORS",
+    text: "Find ✓ Qualified ✓ Experienced ✓ Trusted Home Tutors",
+  },
+  {
+    icon: <FaLaptop />,
+    title: "ONLINE TUITION CLASSES",
+    text: "Get LIVE Interactive Classes From Zoom App or Google Meet.",
+  },
+  {
+    icon: <FaBook />,
+    title: "ALL BOARDS",
+    text: "CBSE Board, ICSE Board, State Board and others.",
+  },
+];
 
-const features = [
+const midFeatures = [
   {
-    id: 1,
-    icon: <FaChalkboardTeacher />,
-    title: "Experienced Faculty",
-    text: "Highly qualified teachers with proven track record of results and mentorship.",
-  },
-  {
-    id: 2,
-    icon: <FaFileAlt />,
-    title: "Regular Tests & Analysis",
-    text: "Frequent tests + detailed performance reports to track progress and improvement.",
-  },
-  {
-    id: 3,
-    icon: <FaHandsHelping />,
-    title: "Doubt Solving Sessions",
-    text: "Live doubt-clearing sessions & one-on-one help to remove learning gaps fast.",
-  },
-  {
-    id: 4,
     icon: <FaUsers />,
-    title: "Parent–Teacher Interaction",
-    text: "Regular parent updates and PT meetings to keep student progress transparent.",
+    title: "MANY OPTIONS",
+    text: "Choose from over 4,000 personally interviewed tutors",
   },
   {
-    id: 5,
-    icon: <FaRupeeSign />,
-    title: "Affordable Fee",
-    text: "High-quality coaching at pocket-friendly fees — value-first approach.",
+    icon: <FaUserCheck />,
+    title: "CONVENIENT",
+    text: "Fit tutorials around your schedule, from the comfort of your home",
+  },
+  {
+    icon: <FaChalkboardTeacher />,
+    title: "100% SATISFACTION",
+    text: "Committed to connecting you to top qualified tutors.",
+  },
+  {
+    icon: <FaLaptop />,
+    title: "HASSLE-FREE PAYMENT",
+    text: "No extra payment. Pay only for the sessions you take.",
+  },
+];
+
+const steps = [
+  {
+    icon: <FaUsers />,
+    text: "4,000+ PERSONALLY INTERVIEWED TUTORS",
+  },
+  {
+    icon: <FaUserCheck />,
+    text: "COMMUNICATE WITH SHORTLISTED TUTORS",
+  },
+  {
+    icon: <FaBook />,
+    text: "TAKE A DEMO CLASS & HIRE THE BEST TUTOR",
   },
 ];
 
 const Features = () => {
   return (
-    <section className="features-section" aria-labelledby="features-heading">
-      {/* decorative images */}
-      <img src={decoLeft} alt="" className="deco-left" aria-hidden="true" />
-      <img src={decoRight} alt="" className="deco-right" aria-hidden="true" />
+    <section className="full-features-wrapper">
+      {/* TOP BLUE STRIP */}
+      <div className="top-strip">
+        {topFeatures.map((f, idx) => (
+          <div key={idx} className="top-feature">
+            <div className="top-icon">{f.icon}</div>
+            <div>
+              <h3>{f.title}</h3>
+              <p>{f.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
-      <div className="container">
-        <div className="features-header">
-          <h2 id="features-heading">Why JP Tutorial is Different</h2>
-          <p className="sub">
-            Focused teaching, regular evaluation and personal attention — everything
-            you need to achieve excellence.
-          </p>
-        </div>
+      {/* MID FEATURES */}
+      <div className="mid-section">
+        {midFeatures.map((f, idx) => (
+          <div key={idx} className="mid-feature">
+            <div className="mid-icon">{f.icon}</div>
+            <h3>{f.title}</h3>
+            <p>{f.text}</p>
+          </div>
+        ))}
+      </div>
 
-        <div className="features-grid">
-          {features.map((f, idx) => (
-            <article
-              key={f.id}
-              className={`feature-card card-${idx + 1}`}
-              tabIndex="0"
-              aria-label={f.title}
-            >
-              <div className="feature-icon">{f.icon}</div>
-              <h3 className="feature-title">{f.title}</h3>
-              <p className="feature-text">{f.text}</p>
-            </article>
-          ))}
-        </div>
+      {/* GETTING STARTED */}
+      <h2 className="steps-heading">GETTING STARTED IS EASY</h2>
+
+      <div className="steps-boxes">
+        {steps.map((s, idx) => (
+          <div key={idx} className="step-box">
+            <div className="step-icon">{s.icon}</div>
+            <p>{s.text}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

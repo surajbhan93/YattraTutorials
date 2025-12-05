@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import aboutImg from "../assets/images/about-banner.png";
+import aboutImg from "../assets/images/h1.png";
 import tutorImg from "../assets/images/about-tutor.png";
 const classes = [
 { title: "Class 1st", desc: "Basic foundations with easy learning." },
@@ -23,18 +23,17 @@ const About = () => {
     <div className="about-container">
       {/* Hero Section */}
       <section className="about-hero">
-        <img src={aboutImg} alt="JP Tutorials Banner" className="hero-img" />
+        <img src={aboutImg} alt="yattra Tutorials Banner" className="hero-img" />
         <div className="hero-overlay"></div>
         <div className="hero-text">
-          <h1>
-            Welcome to <span>JP Tutorial</span>
-          </h1>
-          <p>
-            <strong>Learn & Achieve!</strong> We help students and tutors find
-            each other — bridging the gap between knowledge and opportunity for
-            home learning across Prayagraj.
-          </p>
-        </div>
+    <h1>
+      Unlock Your Potential with <span>Yattra Tutorials</span>
+    </h1>
+    <p>
+      <strong>Personalized Learning, Anytime!</strong> Connecting passionate tutors with eager students across Prayagraj, helping you achieve academic success from the comfort of your home.
+    </p>
+</div>
+
       </section>
 
       {/* About Section */}

@@ -1,4 +1,4 @@
-/* UPDATED MODERN & CLEAN CSS FOR ABOUT PAGE */
+/* UPDATED MODERN & ATTRACTIVE CSS FOR ABOUT PAGE */
 
 /* RESET */
 * {
@@ -8,281 +8,390 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* MAIN CONTAINER */
 .about-container {
   width: 100%;
   overflow-x: hidden;
-  color: #050505;
-  background-color: #555;
+  color: #222;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 }
 
 /* HERO SECTION */
 .about-hero {
   position: relative;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  overflow: hidden;
+  background: linear-gradient(45deg, #6be2da, #ffd700);
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
 }
 
 .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(70%);
-  
+  opacity: 0.6;
+  filter: blur(2px);
 }
 
 .hero-text {
   position: absolute;
-  max-width: 800px;
+  max-width: 850px;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 25px;
   color: #fff;
 }
 
 .hero-text h1 {
   font-size: 3rem;
-  /* font-weight: 100; */
-  font-weight: 700;
-  color: #6be2da;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text h1 span {
-  color: #ffd700;
+  color: #ff6b6b;
+  text-transform: uppercase;
 }
 
 .hero-text p {
-  font-size: 1.6rem;
-  font-weight: 300px;
-  margin-top: 10px;
-  color: aquamarine;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #f0f8ff;
+  line-height: 1.6;
 }
 
-/* ABOUT SECTION */
+/* ABOUT INTRO SECTION */
 .about-intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  padding: 80px 20px;
-  background-color: azure;
-  text-decoration: wavy;
+  gap: 50px;
+  padding: 90px 20px;
+  background: #fef6e4;
 }
 
 .tutor-image {
   width: 100%;
-  max-width: 380px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.tutor-image:hover {
+  transform: scale(1.05);
 }
 
 .tutor-quote {
-  margin-top: 10px;
+  margin-top: 15px;
   font-style: italic;
-  color: #0052d4;
+  font-size: 1.1rem;
+  color: #ff6b6b;
 }
 
 .about-content h2 {
-  font-size: 2rem;
-  color: #0052d4;
-  margin-bottom: 15px;
+  font-size: 2.3rem;
+  color: #6b5b95;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .about-content p {
   font-size: 1rem;
   line-height: 1.8;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 /* STEPS SECTION */
 .steps-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
-  background-color: aquamarine;
+  background: #6be2da;
+  border-top: 5px solid #ffd700;
 }
 
 .steps-section h2 {
-  font-size: 2rem;
-  margin-bottom: 35px;
-  color: #0052d4;
+  font-size: 2.2rem;
+  margin-bottom: 45px;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 .steps-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
 }
 
 .step {
-  background: #ed7979;
-  padding: 22px;
-  border-radius: 14px;
+  background: #ffd700;
+  padding: 25px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(45, 30, 211, 0.1);
-  transition: 0.3s ease;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.4s ease;
 }
 
 .step:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
 }
 
 .step img {
-  width: 55px;
-  margin-bottom: 12px;
+  width: 60px;
+  margin-bottom: 15px;
 }
 
-/* CLASS COURSE SECTION */
+/* COURSE SECTION */
+/* MODERN & ATTRACTIVE COURSE SECTION */
 .course-section {
-  padding: 70px 20px;
-  color: #ed7979;
-  background-color: #555;
+  padding: 80px 20px;
+  color: #fff;
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* deep blue gradient */
   text-align: center;
 }
 
 .course-section h2 {
-  color: #0052d4;
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #ffd700;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  font-weight: 700;
 }
 
 .class-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
 }
 
+/* GLASSMORPHISM STYLE FOR COURSE BOXES */
 .class-card {
-  background: #ef7070;
-  padding: 25px;
-  height: 180px;
-  border-radius: 12px;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(12px); /* glass effect */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle gradient border effect */
+  padding: 30px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
 .class-card:hover {
-  transform: scale(1.15);
-  box-shadow: 0 15px 25px rgba(217, 236, 15, 0.2);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+  border: 1px solid #ffd700; /* gold border on hover */
 }
 
 .class-card h3 {
-  color: #0052d4;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+  font-weight: 700;
 }
 
 .class-card p {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
 }
 
-/* AREA SECTION */
+/* OPTIONAL ICON OR IMAGE IN BOX */
+.class-card img {
+  width: 60px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.class-card:hover img {
+  transform: scale(1.2) rotate(10deg);
+}
+
+
+/* MODERN AREA SECTION */
 .area-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
-   border: #ed7979;
-  background-color: antiquewhite;
+  background: linear-gradient(135deg, #f6d365, #fda085); /* warm gradient */
+  border-radius: 20px;
 }
 
 .area-section h2 {
-  font-size: 2rem;
-  border: #ed7979;
-
-  color: #0052d4;
+  font-size: 2.5rem;
+  color: #6b5b95;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
 .area-section p {
-  max-width: 800px;
-  margin: 15px auto 35px auto;
+  max-width: 850px;
+  margin: 0 auto 50px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
 }
 
+/* GRID LAYOUT FOR AREAS */
 .area-lists {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  text-align: left;
-}
-
-.area-lists h3 {
-  color: #0052d4;
-  margin-bottom: 10px;
-}
-
-/* APARTMENT SECTION */
-.apartment-section {
-  padding: 60px 20px;
-  background: #95979b;
-  text-align: center;
-}
-
-.apartment-grid ul {
-  column-count: 2;
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.apartment-grid li {
-  margin-bottom: 8px;
-}
-
-/* TESTIMONIAL */
-.testimonial-section {
-  /* margin-top: 20px ; */
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.testimonial-grid {
-  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
+/* MODERN AREA CARDS */
+.area-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px); /* glass effect */
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  transition: 0.4s ease, transform 0.4s ease;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.area-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+  border: 1px solid #ffd700; /* glow on hover */
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.area-card h3 {
+  font-size: 1.3rem;
+  color: #6b5b95;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.area-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .area-lists {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .area-section h2 {
+    font-size: 2rem;
+  }
+
+  .area-section p {
+    font-size: 1rem;
+  }
+}
+
+/* APARTMENT SECTION */
+.apartment-section {
+  padding: 70px 20px;
+  background: #ffeaa7;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.apartment-grid ul {
+  column-count: 2;
+  list-style: circle;
+  padding-left: 20px;
+}
+
+.apartment-grid li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #dfe6e9;
+}
+
+.testimonial-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
 .testimonial-card {
   background: #6be2da;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transition: 0.4s ease;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px) scale(1.03);
 }
 
 .testimonial-card p {
-  font-size: 0.95rem;
-  margin-bottom: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
   font-style: italic;
+  color: #fff;
 }
 
 .testimonial-card h4 {
-  font-weight: 600;
-  color: #0052d4;
+  font-weight: 700;
+  color: #ff6b6b;
 }
 
 /* FOOTER */
 .about-footer {
-  background: #172232;
+  background: #2d3436;
   color: #fff;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
+  border-top: 5px solid #ff6b6b;
 }
 
 .about-footer h3 span {
   color: #ffd700;
+  text-transform: uppercase;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .apartment-grid ul {
     column-count: 1;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .steps-section h2,
+  .course-section h2,
+  .area-section h2 {
+    font-size: 2rem;
   }
 }

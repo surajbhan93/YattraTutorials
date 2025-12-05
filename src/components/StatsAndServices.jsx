@@ -2,13 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./StatsAndServices.css";
 
 // Images
-import heroImg from "../assets/stats/hero-tutors.jpg";
-import service1 from "../assets/stats/home-tutor.jpg";
-import service2 from "../assets/stats/online-class.jpg";
-import service3 from "../assets/stats/test-series.jpg";
-import service4 from "../assets/stats/personal-plan.jpg";
-import service5 from "../assets/stats/career-guidance.jpg";
+import heroImg from "../assets/stats/h1.png";
 
+// ✅ STAT COMPONENT
 const Stat = ({ label, end, suffix = "" }) => {
   const [count, setCount] = useState(0);
 
@@ -31,92 +27,175 @@ const Stat = ({ label, end, suffix = "" }) => {
 
   return (
     <div className="stat">
-      <div className="stat-number">{count.toLocaleString()}{suffix}</div>
+      <div className="stat-number">
+        {count.toLocaleString()}
+        {suffix}
+      </div>
       <div className="stat-label">{label}</div>
     </div>
   );
 };
 
+// ✅ MAIN COMPONENT
 const StatsAndServices = () => {
   return (
     <section className="stats-page">
 
-      {/* HERO SECTION */}
-      <div className="stats-hero">
+      {/* ===== HERO SECTION ===== */}
 
-        <div className="hero-img">
-          <img src={heroImg} alt="Tutors" />
-        </div>
 
-        <div className="hero-text">
-          <h1>Trusted Tuition & Home Tutors</h1>
-          <p>
-            Expert tutors, proven results — we’ve served <strong>12,000+</strong> students in the last <strong>23 years</strong>.
-            Connect with certified home tutors or join online classes today.
-          </p>
-          <div className="hero-ctas">
-            <button className="btn primary">Find a Tutor</button>
-            <button className="btn outline">View Courses</button>
-          </div>
-        </div>
+{/* MAIN HERO AREA */}
+<div className="stats-hero">
 
-      </div>
+  <div className="hero-img">
+    <img src={heroImg} alt="Tutors" />
+  </div>
 
-      {/* STATS */}
+  <div className="hero-text">
+    <h1>Trusted Tuition & Home Tutors</h1>
+    <p>
+      Expert tutors, proven results — we’ve served{" "}
+      <strong>12,000+</strong> students in the last{" "}
+      <strong>23 years</strong>. Connect with certified home tutors or
+      join online classes today.
+    </p>
+
+    <div className="hero-ctas">
+      <button className="btn primary">Find a Tutor</button>
+      <button className="btn outline">View Courses</button>
+    </div>
+  </div>
+
+</div>
+
+
+      {/* ===== STATS ===== */}
       <div className="stats-wrap">
         <Stat label="Expert Tutors" end={3000} suffix="+" />
         <Stat label="Years of Trust" end={23} suffix=" yrs" />
         <Stat label="Students Served" end={12000} suffix="+" />
       </div>
 
-      {/* SERVICES */}
+      {/* ===== OUR POPULAR COURSES ===== */}
       <div className="services-section">
-        <h2>Our Key Services & Highlights</h2>
-        <p className="subtitle">Personalized teaching, regular evaluation, and career support — built for student success.</p>
+        <h2>Our Popular Courses</h2>
+        <p className="subtitle">
+          ICSE • CBSE • State Board • Entrance Exams • All Subjects
+        </p>
 
         <div className="services-grid">
+
           <article className="service-card">
-            <img src={service1} alt="Home Tutors" />
-            <h3>Home Tutors</h3>
-            <p>Verified tutors for one-on-one home tuition across all grades and subjects.</p>
+            <h3>ALL SUBJECTS</h3>
+            <ul>
+              <li>Nursery to Class 5th</li>
+              <li>Class 6th to Class 10th</li>
+            </ul>
           </article>
 
           <article className="service-card">
-            <img src={service2} alt="Online Classes" />
-            <h3>Live Online Classes</h3>
-            <p>Interactive online lessons with recordings and doubt sessions.</p>
+            <h3>Maths</h3>
+            <ul>
+              <li>Class IX – X</li>
+              <li>Class XI – XII</li>
+            </ul>
           </article>
 
           <article className="service-card">
-            <img src={service3} alt="Test Series" />
-            <h3>Test Series & Analysis</h3>
-            <p>Regular tests, performance reports and personalized improvement plans.</p>
+            <h3>Science</h3>
+            <ul>
+              <li>Class VI – VIII</li>
+              <li>Class IX – X</li>
+            </ul>
           </article>
 
           <article className="service-card">
-            <img src={service4} alt="Personal Plans" />
-            <h3>Personalized Study Plans</h3>
-            <p>Study schedules tailored to each student's needs and strengths.</p>
+            <h3>English</h3>
+            <ul>
+              <li>Class IX – X</li>
+              <li>Class XI – XII</li>
+            </ul>
           </article>
 
           <article className="service-card">
-            <img src={service5} alt="Career Guidance" />
-            <h3>Career Guidance</h3>
-            <p>Counselling for course & career choices, entrance exam prep and mentorship.</p>
+            <h3>Physics</h3>
+            <ul>
+              <li>Class XI</li>
+              <li>Class XII</li>
+            </ul>
           </article>
+
+          <article className="service-card">
+            <h3>Chemistry</h3>
+            <ul>
+              <li>Class XI</li>
+              <li>Class XII</li>
+            </ul>
+          </article>
+
+          <article className="service-card">
+            <h3>Entrance Exams</h3>
+            <ul>
+              <li>IIT-JEE</li>
+              <li>NEET</li>
+            </ul>
+          </article>
+
+          <article className="service-card">
+            <h3>Accounts</h3>
+            <ul>
+              <li>Class XI</li>
+              <li>Class XII</li>
+            </ul>
+          </article>
+
+          <article className="service-card">
+            <h3>Economics</h3>
+            <ul>
+              <li>Class XI</li>
+              <li>Class XII</li>
+            </ul>
+          </article>
+
+          <article className="service-card">
+            <h3>Business Studies</h3>
+            <ul>
+              <li>Class XI</li>
+              <li>Class XII</li>
+            </ul>
+          </article>
+
+          <article className="service-card">
+            <h3>Computer</h3>
+            <ul>
+              <li>Class IX – X</li>
+              <li>C / C++ (XI – XII)</li>
+            </ul>
+          </article>
+
+          <article className="service-card">
+            <h3>Political Science</h3>
+            <ul>
+              <li>Class XI</li>
+              <li>Class XII</li>
+            </ul>
+          </article>
+
         </div>
       </div>
 
-      {/* CTA */}
+      {/* ===== CTA ===== */}
       <div className="cta-banner">
         <h3>Ready to start?</h3>
-        <p>Book a free demo class or request a tutor callback — join thousands of successful students.</p>
+        <p>
+          Book a free demo class or request a tutor callback — join thousands of
+          successful students.
+        </p>
         <div>
           <button className="btn primary">Book Demo</button>
           <button className="btn outline">Request Callback</button>
         </div>
       </div>
-
     </section>
   );
 };

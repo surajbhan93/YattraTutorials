@@ -2,58 +2,76 @@ import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Reviews from "../components/Reviews";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import img1 from "../assets/images/home.png";
-import img2 from "../assets/images/hero2.jpg";
-import img3 from "../assets/images/hero3.jpg";
-import img4 from "../assets/images/hero4.jpg";
+import img1 from "../assets/images/h11.png";
+import img2 from "../assets/images/h4.jpg";
+import img3 from "../assets/images/h2.jpg";
+import img4 from "../assets/images/h3.jpg";
 import Features from "../components/Features";
 import StatsAndServices from "../components/StatsAndServices";
 const Home = () => {
   const slides = [
     {
       image: img1,
-      title: "Hire the Best & Experienced Home Tutors",
-      text: (
-        <>
-          Get top-quality home tuition for all classes —{" "}
-          <b>ICSE, ISC, CBSE, UP Board, IIT, NEET</b> &{" "}
-          <b>Computer Courses</b> like{" "}
-          <span className="highlight-courses">Java, BlueJ, C++, Python</span>{" "}
-          and more. Learn with expert teachers at your doorstep.
-        </>
+    title: "Hire Experienced Tutors at Yattra Tutorial",
+    text: (
+      <>
+        <br />
+        Get high-quality tuition for all classes — <b>ICSE, ISC, CBSE, UP Board, IIT, NEET</b>  
+        and <b>Computer Courses</b> like <span className="highlight-courses">Java, BlueJ, C++, Python</span>.  
+        Learn from <b>expert tutors</b> at your doorstep with personalized attention.
+
+        <br />
+       
+          <strong>
+            📞 Call at: <a href="tel: 6363453870"> 6363453870</a> for Home Tutors
+          </strong>
+          <br />
+          <strong>📍 Enquiry (Prayagraj): +91-9838971336</strong>
+          <br />
+          📍 <b>Address:</b> Sangam Chauraha, Om Gyatri Nagar, Prayagraj  
+        <br />
+      </>
       ),
     },
     {
       image: img2,
-      title: "One-to-One Personalized Learning",
-      text: (
-        <>
-          Every student is unique — that’s why we provide{" "}
-          <b>individual attention</b> to help you master each subject
-          confidently. Guaranteed support for the whole session, with{" "}
-          <b>2 days of free trial classes</b>. Tuition fees are charged
-          according to the class level.
-        </>
-      ),
-    },
+    title: "All Subjects • School to Professional Level",
+    text: (
+      <>
+        ✅ <b>Subjects Taught:</b>  
+        <br />
+        Biology, Chemistry, Physics, Maths, Science  
+        <br />
+        Accounts, Commerce, Economics, Psychology  
+        <br />
+        Computer Science, MS Excel, Tally, Phonics  
+        <br />
+        Engineering & Engineering Maths  
+        <br />
+        <br />
+        One-to-one learning with focus on concept clarity & exam success.
+      </>
+    ),
+  },
 {
   image: img3,
-  title: "All Subjects • All Boards • All Levels",
+  title: "From Class I to Advanced Competitive & Career Courses",
   text: (
-    <>
-      From <b>primary to competitive exams</b> — find{" "}
-      <b>trusted and qualified tutors</b> for{" "}
-      <b>Maths, Science, English, Computer, and more.</b>
-      <br />
-      <br />
-      <span className="highlight-pro">
-        💼 Professional & Highly Qualified Tutors Available
-      </span>
-      <br />
-      <span className="highlight-pro">
-        📝 Monthly Tests with Special Model Papers for Better Preparation
-      </span>
-    </>
+       <>
+        🎯 <b>School Classes Assisted:</b> Class I to higher classes  
+        <br />
+        📝 Regular Tests & Smart Preparation Strategy  
+        <br />
+        💼 Professional & Career-Oriented Courses Available  
+        <br />
+        📘 Concept-Based Learning with Personal Mentorship  
+        <br />
+        <br />
+        <span className="highlight-pro">
+          Trusted Tutorial Service in Prayagraj – Powered by Yattra Tutorial
+        </span>
+
+      </>
   ),
 },
 
@@ -72,10 +90,15 @@ const Home = () => {
           <br />
           <br />
           <strong>
-            📞 Call at: <a href="tel:93355125003">93355125003</a> for Home Tutors
+            📞 Call at: <a href="tel: 6363453870"> 6363453870</a> for Home Tutors
           </strong>
           <br />
-          <strong>📍 Enquiry (Prayagraj): +91-9198639707</strong>
+          <strong>📍 Enquiry (Prayagraj): +91-9838971336</strong>
+          <br />
+          📍 <b>Address:</b> Sangam Chauraha, Om Gyatri Nagar, Prayagraj  
+        <br />
+        📧 <b>Email:</b> gy4650762@gmail.com  
+        <br />
         </>
       ),
     },
@@ -128,7 +151,8 @@ const Home = () => {
             key={index}
             className={`slide ${index === current ? "active" : ""}`}
           >
-            <img src={slide.image} alt={slide.title} />
+           <img src={slide.image} alt={slide.title} className="slide-image" />
+
             {index === current && (
               <div className="overlay">
                 <h2 className="typewriter-text">{displayedText}</h2>
