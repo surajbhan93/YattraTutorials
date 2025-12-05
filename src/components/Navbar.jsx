@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-left">
         <img src={logo} alt="JP Tutorials Logo" className="logo" />
-        <h1 className="brand">JP Tutorial</h1>
+        <h1 className="brand">Yattra Tutorial</h1>
       </div>
 
       <div className={`nav-right ${isOpen ? "open" : ""}`}>

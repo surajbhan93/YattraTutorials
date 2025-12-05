@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
-import aboutImg from "../assets/images/h1.png";
-import tutorImg from "../assets/images/about-tutor.png";
+import aboutImg from "../assets/images/h11.png";
+import tutorImg from "../assets/images/about-banner.png";
 const classes = [
 { title: "Class 1st", desc: "Basic foundations with easy learning." },
 { title: "Class 2nd", desc: "Concept building with fun learning." },
@@ -45,27 +45,32 @@ const About = () => {
             <strong>ACADEMIC EXCELLENCE</strong>
           </p>
         </div>
-        <div className="about-content">
-          <h2>Who We Are</h2>
-          <p>
-            <strong>JP Tutorial</strong> is a trusted home tutoring platform in
-            Prayagraj (Allahabad), connecting students with expert tutors for{" "}
-            <b>Classes 1–12</b>, <b>Computer Courses</b>, and{" "}
-            <b>Competitive Exams</b>. Our mission is to bring quality education
-            right to your doorstep.
-          </p>
-          <p>
-            Our tutors provide <strong>personalized learning</strong> and
-            one-on-one mentorship to help students build confidence and improve
-            academic results.
-          </p>
-          <p>
-            With <strong>JP Tutorials</strong>, education becomes engaging,
-            flexible, and results-driven — because every child deserves the best
-            learning experience.
-          </p>
-          <p><strong>JP Tutorial</strong> established in the year <strong><i>2002</i></strong> and since then has been providing students with teachers who are professional in their subjects.our students from different <b> ICSE ISC CBSE Boards, </b> schools and Colleges.. These students have done very well in their life and many of our students are in medical professional , and other fields, JP sir is a very good person coperative person for students as well as for teachers . <strong>Join our tutorial for the best teachers provided by JP sir</strong></p>
-        </div>
+       <div className="about-content">
+  <h2>Who We Are</h2>
+  <p>
+    <strong>Yattra Tutorials</strong> is a trusted home tutoring platform in
+    Prayagraj, connecting students with expert tutors for <b>Classes 1–12</b>, 
+    <b>Computer Courses</b>, and <b>Competitive Exams</b>. Our mission is to bring 
+    quality education right to your doorstep.
+  </p>
+  <p>
+    Our tutors provide <strong>personalized learning</strong> and one-on-one mentorship 
+    to help students gain confidence and achieve excellent academic results.
+  </p>
+  <p>
+    With <strong>Yattra Tutorials</strong>, education becomes engaging, flexible, and 
+    results-driven — because every student deserves the best learning experience.
+  </p>
+  <p>
+    <strong>Yattra Tutorials</strong>, established in <strong><i>2020</i></strong>, 
+    has been connecting students with professional and experienced teachers. 
+    Our students come from various <b>ICSE, ISC, and CBSE boards</b>, schools, and colleges. 
+    Many have gone on to excel in medical, engineering, and other professional fields. 
+    Our team is dedicated, cooperative, and student-focused, ensuring that every learner 
+    gets the guidance they need. <strong>Join Yattra Tutorials to learn from the best tutors!</strong>
+  </p>
+</div>
+
       </section>
 
       {/* How It Works */}
@@ -211,23 +216,23 @@ const About = () => {
         <div className="testimonial-grid">
           {[
             {
-              name: "Riya Sharma",
+              name: "Riya Verma",
               text: "JP Tutorials helped me score 95% in Class 10th! The tutor was patient and made learning fun.",
             },
             {
-              name: "Ankit Verma",
+              name: "aniket Verma",
               text: "Best home tuition in Prayagraj. I cleared my NDA exam with their guidance!",
             },
             {
-              name: "Sneha Singh",
+              name: "muskan Singh",
               text: "The computer classes were excellent! I learned HTML and Python easily.",
             },
             {
-              name: "Aman Gupta",
+              name: "abhishek Gupta",
               text: "My maths concepts became crystal clear. Highly recommended!",
             },
             {
-              name: "Priya Yadav",
+              name: "Ganesh Yadav",
               text: "Very cooperative tutors and smooth process to find the right teacher.",
             },
           ].map((t, i) => (
@@ -242,7 +247,7 @@ const About = () => {
       {/* Footer */}
       <footer className="about-footer">
         <h3>
-          JP Tutorial - <span>Learn. Grow. Succeed.</span>
+          Yattra Tutorials - <span>Learn. Grow. Succeed.</span>
         </h3>
         <p>
           Building a brighter educational future for Prayagraj.{" "}

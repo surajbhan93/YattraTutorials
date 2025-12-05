@@ -1,0 +1,74 @@
+.carousel-container {
+  padding: 50px;
+  background: linear-gradient(135deg, #f5f8ff, #e0f7fa);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-container h1 {
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.tutor-card {
+  background: linear-gradient(145deg, #ffffff, #dff6ff);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px 10px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  margin: 0 10px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.tutor-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 25px 35px rgba(0,0,0,0.25);
+}
+
+.tutor-photo img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2a9d8f;
+  margin: 0 auto 15px;
+  transition: transform 0.4s, border-color 0.4s;
+}
+
+.tutor-card:hover .tutor-photo img {
+  transform: scale(1.1);
+  border-color: #e76f51;
+}
+
+.tutor-info {
+  text-align: center;
+}
+
+.tutor-info h3 {
+  margin: 10px 0 8px;
+  font-size: 1.4rem;
+  color: #264653;
+  font-weight: 600;
+}
+
+.tutor-info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.tutor-info strong {
+  color: #2a9d8f;
+}
+
+/* Slick override for arrows */
+.slick-prev:before, .slick-next:before {
+  color: #2a9d8f;
+  font-size: 30px;
+}
+
+.slick-slide {
+  padding: 10px;
+}

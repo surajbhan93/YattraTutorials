@@ -59,19 +59,19 @@ const Contact = () => {
           <h3>Reach Us</h3>
           <div className="info-box">
             <p><strong>Office / Head Office:</strong></p>
-            <p>201, Chaukhandi, Kydganj, Prayagraj, Uttar Pradesh, India</p>
+            <p>Sangam Chauraha Om Gyatri Nagar, Prayagraj Uttar Pradesh, India</p>
             <p><strong>Pin Code:</strong> 211003</p>
           </div>
           <div className="info-box">
-            <p><strong>Director:</strong> Mr. J.P. Singh</p>
-            <p><strong>Email:</strong> jpsingh1806@gmail.com</p>
-            <p><strong>Mobile:</strong> +91 9335125003</p>
+            <p><strong>Director:</strong> Mr. Ganesh Kumar</p>
+            <p><strong>Email:</strong> gy4750762@gmail.com</p>
+            <p><strong>Mobile:</strong> +91-6363453870</p>
           </div>
           <div className="info-box">
-            <p><strong>HR Manager:</strong> Ms. Kanika Singh</p>
+            <p><strong>HR Manager:</strong> Ms. richa Singh</p>
             <p>B.COM, MBA(HR & Finance)</p>
-            <p><strong>Email:</strong> hr@jptutorial.com</p>
-            <p><strong>Mobile:</strong> +91 9307814133</p>
+            <p><strong>Email:</strong> hr@yattratutorial.com</p>
+            <p><strong>Mobile:</strong> +91 9838971336</p>
           </div>
         </div>
       </div>

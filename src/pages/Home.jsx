@@ -8,6 +8,7 @@ import img3 from "../assets/images/h2.jpg";
 import img4 from "../assets/images/h3.jpg";
 import Features from "../components/Features";
 import StatsAndServices from "../components/StatsAndServices";
+import TutorCarousel from "../components/TutorCarousel";
 const Home = () => {
   const slides = [
     {
@@ -80,7 +81,7 @@ const Home = () => {
       title: "Your Success is Our Priority",
       text: (
         <>
-          At <b>JP Tutorial</b>, we ensure every student achieves excellence
+          At <b>Yattra Tutorials</b>, we ensure every student achieves excellence
           through expert guidance and smart teaching methods.
           <br />
           <br />
@@ -186,7 +187,9 @@ const Home = () => {
       
     </section>
       <Features />
+
       <StatsAndServices />
+      <TutorCarousel/>
     <Reviews />
     </>
   );

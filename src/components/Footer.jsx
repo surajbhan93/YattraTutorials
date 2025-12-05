@@ -50,7 +50,7 @@ const Footer = () => {
           <ul>
             <li><a href="/about">About Us</a></li>
             <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/hire">Hire A Tutor</a></li>
+            <li><a href="/StudentReg">Hire A Tutor</a></li>
             <li><a href="/area">Tutors By Area</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/payment">Payment</a></li>
@@ -62,16 +62,16 @@ const Footer = () => {
           <h4>GET IN TOUCH</h4>
 
           <p>📍 Sangam Chauraha Om Gyatri Nagar, Prayagraj</p>
-          <p>📧 Info@Yattratutorials.In</p>
+          <p>📧 gy4650762@gmail.com </p>
           <p>📞 6363453870<br />📞 9838971336</p>
 
           <div className="social-icons">
-            <a><FaFacebookF /></a>
-            <a><FaInstagram /></a>
-            <a><FaTwitter /></a>
-            <a><FaYoutube /></a>
-            <a><FaEnvelope /></a>
-            <a><FaLinkedinIn /></a>
+            <a href="https://www.facebook.com/share/1B2LjrnDvZ/" target="_blank"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/yattra762/" target="_blank"><FaInstagram /></a>
+            <a href="/"><FaTwitter /></a>
+            <a href="/"><FaYoutube /></a>
+            <a href="https://codelura.in/" target="_blank"><FaEnvelope /></a>
+            <a href="https://www.linkedin.com/company/yattra-tutorial/?viewAsMember=true "target="_blank" ><FaLinkedinIn /></a>
           </div>
         </div>
 

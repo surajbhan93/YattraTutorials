@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./StatsAndServices.css";
-
+import { Link } from 'react-router-dom';
 // Images
 import heroImg from "../assets/stats/h1.png";
 
@@ -55,14 +55,18 @@ const StatsAndServices = () => {
     <h1>Trusted Tuition & Home Tutors</h1>
     <p>
       Expert tutors, proven results — we’ve served{" "}
-      <strong>12,000+</strong> students in the last{" "}
-      <strong>23 years</strong>. Connect with certified home tutors or
+      <strong>10,000+</strong> students in the last{" "}
+      <strong>5 years</strong>. Connect with certified home tutors or
       join online classes today.
     </p>
 
     <div className="hero-ctas">
-      <button className="btn primary">Find a Tutor</button>
+     <Link to="/StudentReg">
+  <button className="btn primary">Find a Tutor</button>
+</Link>
+<Link to="/about">
       <button className="btn outline">View Courses</button>
+      </Link>
     </div>
   </div>
 
@@ -72,8 +76,8 @@ const StatsAndServices = () => {
       {/* ===== STATS ===== */}
       <div className="stats-wrap">
         <Stat label="Expert Tutors" end={3000} suffix="+" />
-        <Stat label="Years of Trust" end={23} suffix=" yrs" />
-        <Stat label="Students Served" end={12000} suffix="+" />
+        <Stat label="Years of Trust" end={5} suffix=" yrs" />
+        <Stat label="Students Served" end={10000} suffix="+" />
       </div>
 
       {/* ===== OUR POPULAR COURSES ===== */}
@@ -192,6 +196,7 @@ const StatsAndServices = () => {
           successful students.
         </p>
         <div>
+          
           <button className="btn primary">Book Demo</button>
           <button className="btn outline">Request Callback</button>
         </div>
