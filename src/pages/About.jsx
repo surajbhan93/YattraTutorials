@@ -75,7 +75,7 @@ const About = () => {
 
       {/* How It Works */}
       <section className="steps-section">
-        <h2>How JP Tutorial Works</h2>
+        <h2>How Yattra-Tutorials Works</h2>
         <div className="steps-grid">
           <div className="step">
             <img

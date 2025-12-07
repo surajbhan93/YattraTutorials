@@ -72,3 +72,40 @@
 .slick-slide {
   padding: 10px;
 }
+/* ✅ Mobile View - Only 1 Card */
+@media (max-width: 600px) {
+  .carousel-container {
+    padding: 25px 10px;
+  }
+
+  .carousel-container h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .tutor-card {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .tutor-photo img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .tutor-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .tutor-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Tablet View - 2 Cards */
+@media (min-width: 601px) and (max-width: 991px) {
+  .tutor-card {
+    max-width: 90%;
+  }
+}
+

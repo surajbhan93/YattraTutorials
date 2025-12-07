@@ -69,7 +69,7 @@ const Footer = () => {
             <a href="https://www.facebook.com/share/1B2LjrnDvZ/" target="_blank"><FaFacebookF /></a>
             <a href="https://www.instagram.com/yattra762/" target="_blank"><FaInstagram /></a>
             <a href="/"><FaTwitter /></a>
-            <a href="/"><FaYoutube /></a>
+            <a href="https://youtube.com/@yattratutorial?si=MsT2UehcBZ5w145D" target="_blank"> <FaYoutube /></a>
             <a href="https://codelura.in/" target="_blank"><FaEnvelope /></a>
             <a href="https://www.linkedin.com/company/yattra-tutorial/?viewAsMember=true "target="_blank" ><FaLinkedinIn /></a>
           </div>

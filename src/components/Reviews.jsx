@@ -18,7 +18,7 @@ import review14 from "../assets/reviews/review14.png";
 import review15 from "../assets/reviews/review15.png";
 import review16 from "../assets/reviews/review16.png";
 import review17 from "../assets/reviews/review17.png";
-import review18 from "../assets/reviews/review18.png";
+// import review18 from "../assets/reviews/review18.png";
 import review19 from "../assets/reviews/review19.png";
 
 
@@ -47,7 +47,7 @@ const Reviews = () => {
         <img src={review15} alt="Review 5" className="review-img img15" />
         <img src={review16} alt="Review 5" className="review-img img16" />
         <img src={review17} alt="Review 5" className="review-img img17" />
-        <img src={review18} alt="Review 5" className="review-img img18" />
+        {/* <img src={review18} alt="Review 5" className="review-img img18" /> */}
        <img src={review19} alt="Review 5" className="review-img img19"/>
       </div>
     </section>

@@ -18,11 +18,11 @@ import t10 from "../assets/images/t10.jpeg";
 
 // Tutors data
 const tutors = [
-  { id: 1, name: "Priyam Sharma", subject: "Mathematics", photo: h11, experience: 5, qualification: "M.Sc Mathematics" },
-  { id: 2, name: "Aswani", subject: "Physics", photo: h2, experience: 4, qualification: "M.Sc Physics" },
-  { id: 3, name: "Singhasan Maurya", subject: "Chemistry", photo: t3, experience: 6, qualification: "Ph.D Chemistry" },
-  { id: 4, name: "Akash Sukla", subject: "Biology", photo: t4, experience: 3, qualification: "M.Sc Biology" },
-  { id: 5, name: "Sadhbhavna rastogi", subject: "English", photo: t5, experience: 7, qualification: "M.A English" },
+  { id: 1, name: "Priyam Sharma", subject: "Mathematics", photo: h11, experience: 8, qualification: "B.sc, M.Sc Mathematics" },
+  { id: 2, name: "Aswani", subject: "Physics", photo: h2, experience: 10, qualification: "B.sc, M.Sc Physics" },
+  { id: 3, name: "Singhasan Maurya", subject: "Chemistry", photo: t3, experience: 13, qualification: "B.sc, M.Sc Chemistry" },
+  { id: 4, name: "Akash Sukla", subject: "Commerce", photo: t4, experience: 8, qualification: "B.Com MCom" },
+  { id: 5, name: "Sadhbhavna rastogi", subject: "Mathematics", photo: t5, experience: 12, qualification: "B.sc, M.Sc Mathematics" },
   { id: 6, name: "Divya Awasthi", subject: "History", photo: t6, experience: 4, qualification: "M.A History" },
   { id: 7, name: "Shashibhusan", subject: "Computer Science", photo: t7, experience: 5, qualification: "B.Tech CS" },
   { id: 8, name: "Pooja Sharma", subject: "Economics", photo: t8, experience: 6, qualification: "M.A Economics" },
@@ -32,21 +32,34 @@ const tutors = [
 
 const TutorCarousel = () => {
   const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1200,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    centerMode: true,
-    centerPadding: "0px",
-    pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 600, settings: { slidesToShow: 1 } }
-    ]
-  };
+  dots: false,
+  infinite: true,
+  speed: 1200,
+  slidesToShow: 1,        // ✅ Always 1 card
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  centerMode: true,
+  centerPadding: "0px",
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,    // tablet & below: 1 card
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,    // mobile: 1 card
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
+
 
   return (
     <div className="carousel-container">
